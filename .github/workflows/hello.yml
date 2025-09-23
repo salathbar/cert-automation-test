@@ -1,0 +1,12 @@
+name: Hello World Test
+
+on:
+  workflow_dispatch:   # allows manual trigger
+  push:                # runs on every push
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello
+        run: echo "👋 Hello from GitHub Actions!"
