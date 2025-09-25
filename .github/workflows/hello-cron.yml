@@ -1,6 +1,8 @@
-name: Hello World Test
+name: Hello World Test Cron
 
 on:
+  schedule:
+    - cron: "*/6 * * * *"   # every 6 minute
   workflow_dispatch:   # allows manual trigger
   push:                # runs on every push
 
